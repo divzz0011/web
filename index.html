@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jasa-kebutuhan-pemrograman</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            background: url('https://source.unsplash.com/random/1920x1080') no-repeat center center/cover;
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+        }
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="profile.jpg" alt="Foto Profil" class="profile-img">
+        <h1 id="name">Divzz</h1>
+        <h2>Jabatan: <span id="position">Senior Software Engineer</span></h2>
+        <p><strong>Email:</strong> <span id="email">divzzxxx@gmail.com</span></p>
+        <p><strong>Telepon:</strong> <span id="phone">+62 8181 8160 725</span></p>
+        <p><strong>Alamat:</strong> <span id="address">Jl.yttta, Bandung</span></p>
+        <h2>Keahlian</h2>
+        <ul id="skills">
+            <li>Cyber Security (Hacking, Find Location, Virus)</li>
+            <li>Pemrograman Backend (Node.js, Python, PHP)</li>
+            <li>Database Management (MySQL, PostgreSQL)</li>
+            <li>Cloud Computing (AWS, Google Cloud)</li>
+            <li>Manajemen Proyek Agile</li>
+        </ul>
+        <p><strong>Instagram:</strong> <a href="https://instagram.com/divzz_neverlouse" target="_blank" id="instagram">@Divzz</a></p>
+        <button onclick="updateProfile()">ORDER</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
