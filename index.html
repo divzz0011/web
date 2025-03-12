@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JASA-PEMROGRAMAN</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('https://source.unsplash.com/random/1920x1080') no-repeat center center/cover;
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            text-align: center;
+        }
+        nav {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 10px;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .page {
+            max-width: 600px;
+            margin: 50px auto;
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        button {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#" onclick="showPage('home')">Data Diri</a></li>
+            <li><a href="#" onclick="showPage('order')">Order Jasa</a></li>
+        </ul>
+    </nav>
+    
+    <div id="home" class="page">
+        <h1>Data Diri</h1>
+        <img src="profile.jpg" alt="Foto Profil" class="profile-img">
+        <p><strong>Nama:</strong> Divzz</p>
+        <p><strong>Jabatan:</strong> Senior Software Engineer</p>
+        <p><strong>Email:</strong> divzzxxx@gmail.com</p>
+        <p><strong>Telepon:</strong> +62 8181 8160 725</p>
+        <p><strong>Alamat:</strong> Jl.ytta, Bandung</p>
+        <p><strong>Instagram:</strong> <a href="https://instagram.com/divzz_neverlouse" target="_blank">@Divzz</a></p>
+    </div>
+    
+    <div id="order" class="page" style="display: none;">
+        <h1>Order Jasa</h1>
+        <form id="orderForm">
+            <label for="service">Pilih Jasa:</label>
+            <select id="service">
+                <option value="web_dev">Website Development</option>
+                <option value="cyber_security">Cyber Security</option>
+                <option value="database_management">Database Management</option>
+            </select>
+            <label for="details">Detail Pesanan:</label>
+            <textarea id="details" placeholder="Jelaskan kebutuhan Anda..."></textarea>
+            <button type="button" onclick="submitOrder()">Pesan Sekarang</button>
+        </form>
+        <p id="orderStatus"></p>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
